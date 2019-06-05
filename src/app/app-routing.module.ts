@@ -53,44 +53,44 @@ const routes: Routes = [
   {
     path: 'companies/my, companies/update, companies/delete/**',
     component: CompanyComponent,
-    canActivate: [AuthGuard],
-    data: { roles: [Role.ROLE_COWNER] }
+    // canActivate: [AuthGuard],
+    // data: { roles: [Role.ROLE_COWNER] }
   },
   {
     path: 'searchResume',
     component: SearchResumeComponent,
-    canActivate: [AuthGuard],
-    data: { roles: [Role.ROLE_COWNER] }
+    // canActivate: [AuthGuard],
+    // data: { roles: [Role.ROLE_COWNER] }
   },
   {
     path: 'companies/approve, companies/create',
     component: MyCompanyComponent,
-    canActivate: [AuthGuard],
-    data: { roles: [Role.ROLE_COWNER, Role.ROLE_USER] }
+    // canActivate: [AuthGuard],
+    // data: { roles: [Role.ROLE_COWNER, Role.ROLE_USER] }
   },
   {
     path: 'resume/create',
     component: AddResumeComponent,
-    canActivate: [AuthGuard],
-    data: { roles: [Role.ROLE_COWNER, Role.ROLE_USER] }
+    // canActivate: [AuthGuard],
+    // data: { roles: [Role.ROLE_COWNER, Role.ROLE_USER] }
   },
   {
     path: 'resume/user',
     component: ViewResumeComponent,
-    canActivate: [AuthGuard],
-    data: { roles: [Role.ROLE_COWNER, Role.ROLE_USER] }
+    // canActivate: [AuthGuard],
+    // data: { roles: [Role.ROLE_COWNER, Role.ROLE_USER] }
   },
   {
     path: 'showResume/:vacancyId',
     component: ShowResumeComponent,
-    canActivate: [AuthGuard],
-    data: { roles: [Role.ROLE_COWNER] }
+    // canActivate: [AuthGuard],
+    // data: { roles: [Role.ROLE_COWNER] }
   },
   {
     path: 'createVacancy/:companyId',
     component: EditVacancyComponent,
-    canActivate: [AuthGuard],
-    data: { roles: [Role.ROLE_COWNER] }
+    // canActivate: [AuthGuard],
+    // data: { roles: [Role.ROLE_COWNER] }
   },
 
   { path: 'profile', component: ProfileComponent },
