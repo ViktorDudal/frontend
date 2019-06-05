@@ -82,15 +82,15 @@ export class AddUserComponent implements OnInit {
         this.router.navigateByUrl('/companies');
       }
       if (this.currentUser && this.currentUser.roles && this.currentUser.roles.indexOf(Role.ROLE_COWNER) > -1) {
-        this.router.navigateByUrl('/companies/my');
+        window.location.replace('/companies/my');
       }
       if (this.currentUser && this.currentUser.roles && this.currentUser.roles.indexOf(Role.ROLE_USER) > -1) {
-        this.router.navigateByUrl('/resume/user');
+        window.location.replace('/resume/user');
       }
     },
       error => {
         this.openErrorModal('Wrong credentials! Please try again.');
-        this.router.navigateByUrl('/users/auth');
+        window.location.replace('/users/auth');
       });
   }
 

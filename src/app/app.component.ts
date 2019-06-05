@@ -52,7 +52,7 @@ export class AppComponent {
   logout() {
     this.app.logout();
     this.vacancySelect = false;
-    window.location.reload();
+    window.location.replace('/vacancies');
   }
 
   get isAdmin() {
